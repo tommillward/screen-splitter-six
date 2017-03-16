@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+	
+<head>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/jquery-ui.js"></script>
+	<link rel="stylesheet" type="text/css" href="stylesheet3.css">
+	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<title>Vizia Command iframe</title>
+
+
+
+
+  	<script>
+		$(document).ready(function(){
+			$("#drag").draggable( {containment: "body", scroll: false} );
+
+			$('.edit').click(function() {
+    			$('#drag').show();
+			});
+
+			$('.hide').click(function() {
+    			$('#drag').hide();
+			});
+
+			$('.pure-button').click(function() {
+				window.open("http://vizia-admin-ext.brandwatch.com/login");
+  			});
+		});
+	</script>
+
+	<script type="text/javascript">
+
+
+	function loadPages1(){
+            var loc1 = document.getElementById('in1').value;
+            document.getElementById('f1').setAttribute('src', loc1);
+        }
+
+	function loadPages2(){
+            var loc2 = document.getElementById('in2').value;
+            document.getElementById('f2').setAttribute('src', loc2);
+        }
+
+    function loadPages3(){
+            var loc3 = document.getElementById('in3').value;
+            document.getElementById('f3').setAttribute('src', loc3);
+        }
+
+	function loadPages4(){
+            var loc4 = document.getElementById('in4').value;
+            document.getElementById('f4').setAttribute('src', loc4);
+        }
+    function loadPages5(){
+            var loc5 = document.getElementById('in5').value;
+            document.getElementById('f5').setAttribute('src', loc5);
+        }
+    function loadPages6(){
+            var loc6 = document.getElementById('in6').value;
+            document.getElementById('f6').setAttribute('src', loc6);
+        }
+    </script>
+
+</head>
+
+<body>
+
+<!--
+	<div id="if1" class="iframe"></div>
+	<div id="if2" class="iframe"></div>
+	<br/>
+	<div id="if3" class="iframe"></div>
+	<div id="if4" class="iframe"></div>
+-->
+
+	<div class="edit">
+		<p>EDIT</p>
+	</div>
+	<!--<div class='speech'>
+		<img src = 'speech.png'>
+	</div-->
+
+
+		<table>
+			<tr>
+				<td id="a"><iframe id="f1" src="https://www.brandwatch.com/"></iframe></td>
+				<td id="b"><iframe id="f2" src="https://www.brandwatch.com/"></iframe></td>
+				<td id="b"><iframe id="f3" src="https://www.brandwatch.com/"></iframe></td>
+			</tr>
+
+			<tr>
+				<td id="c"><iframe id="f4" src="https://www.brandwatch.com/"></iframe></td>
+				<td id="d"><iframe id="f5" src="https://www.brandwatch.com/"></iframe></td>
+				<td id="d"><iframe id="f6" src="https://www.brandwatch.com/"></iframe></td>
+			</tr>
+		</table>
+
+	<div id="drag">
+		<div class="toolbar">
+			<div class = "hide"> 
+				<img src = 'close.png'>
+			</div>
+			
+			<!--<div class="signin">
+				<p>Sign in</p>
+			</div> 
+			
+			<div class="vizia_admin"> 
+				<p>Open Vizia Admin</p>
+			</div> -->
+
+
+			<button class="pure-button">
+	    		<i class="fa fa-cog"></i>
+	    		Open Vizia Admin
+			</button>
+
+			<img class = 'logo' src ='https://www.brandwatch.com/wp-content/themes/brandwatch/images/logo_brandwatch_main_120x143_grey.svg'>
+			
+
+		</div>
+
+		<div class="url_label">
+				<label> URL 1 <input id="in1" class="url_in" type="text" /> <input class='loadb' type="button" value="LOAD" onClick="loadPages1()"> </label>
+				<br/>
+				<label> URL 2 <input id="in2" class="url_in" type="text" /> <input class='loadb' type="button" value="LOAD" onClick="loadPages2()"> </label>
+				<br/>
+				<label> URL 3 <input id="in3" class="url_in" type="text" /> <input class='loadb' type="button" value="LOAD" onClick="loadPages3()"> </label>
+				<br/>
+				<label> URL 4 <input id="in4" class="url_in" type="text" /> <input class='loadb' type="button" value="LOAD" onClick="loadPages4()"> </label>
+				<br/>
+				<label> URL 5 <input id="in5" class="url_in" type="text" /> <input class='loadb' type="button" value="LOAD" onClick="loadPages5()"> </label>
+				<br/>
+				<label> URL 6 <input id="in6" class="url_in" type="text" /> <input class='loadb' type="button" value="LOAD" onClick="loadPages6()"> </label>
+		</div>
+	</div>
+
+	
+</body>
+
+</html>
