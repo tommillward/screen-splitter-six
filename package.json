@@ -1,0 +1,22 @@
+{
+  "name": "vizia_tool_6",
+  "version": "1.0.0",
+  "description": "Splitting a page into 6 iframes",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tommillward/screen-splitter-six.git"
+  },
+  "author": "Tom Millward",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tommillward/screen-splitter-six/issues"
+  },
+  "homepage": "https://github.com/tommillward/screen-splitter-six#readme",
+  "dependencies": {
+    "express": "^4.15.2"
+  }
+}
